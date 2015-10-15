@@ -1,0 +1,7 @@
+e:\文件\visual studio 2013\Projects\LiuYanBan\LiuYanBan\bin\LiuYanBan.dll.config
+e:\文件\visual studio 2013\Projects\LiuYanBan\LiuYanBan\bin\LiuYanBan.dll
+e:\文件\visual studio 2013\Projects\LiuYanBan\LiuYanBan\bin\LiuYanBan.pdb
+e:\文件\visual studio 2013\Projects\LiuYanBan\LiuYanBan\bin\NVelocity.dll
+e:\文件\visual studio 2013\Projects\LiuYanBan\LiuYanBan\obj\Debug\LiuYanBan.csprojResolveAssemblyReference.cache
+e:\文件\visual studio 2013\Projects\LiuYanBan\LiuYanBan\obj\Debug\LiuYanBan.dll
+e:\文件\visual studio 2013\Projects\LiuYanBan\LiuYanBan\obj\Debug\LiuYanBan.pdb

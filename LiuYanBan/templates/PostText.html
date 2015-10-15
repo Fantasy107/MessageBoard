@@ -1,0 +1,50 @@
+﻿#parse("Head.html")
+<script type="text/javascript">
+    window.onload = function check()
+    {
+        Temp();    
+    }
+    function Temp()
+    {
+        var title = document.getElementById("Title");
+        var msg = document.getElementById("Msg");
+        var nickName = document.getElementById("NickName");
+        var submit = document.getElementById("submit");
+        var isAnonymous = document.getElementById("IsAnomous");
+        if ((title.value.length<=0) || (msg.value.length <= 0)) {
+            submit.disabled = true;          
+        } else {
+            submit.disabled=false;          
+        }       
+    }
+    function Nick(x) {
+        var IsAnonymous = document.getElementById(x);
+        var NickName = document.getElementById("NickName");
+        if (IsAnonymous.checked) {
+            NickName.disabled = true;
+            document.getElementById("NickName").value = null;
+        }
+        else {
+            NickName.disabled=false;          
+        }
+    }
+</script>
+<div style="width:500px;margin:auto;">
+   <form action="PostText.ashx" method="post">
+     <table>
+       <tr> <td><span>昵称：</span></td><td>
+        <input type="text" name="NickName" id="NickName" />
+        <input type="checkbox" name="IsAnonymous" id="IsAnonymous"onchange="Nick(this.id);" />
+        <label for="IsAnonymous">匿名</label></td>
+        </tr>
+       <tr><td> <span>标题：</span></td><td>
+        <input type="text" name="Title"  id="Title" onchange="Temp()"/>
+       </td></tr>
+        <tr><td>&nbsp;</td><td><textarea name="Msg" cols="50" rows="5" id="Msg" onchange="Temp()"></textarea></td></tr>
+         <tr><td>&nbsp;</td><td><input type="submit" name="Sava" value="保存" id="submit" /></td></tr>
+    </table>
+   </form>
+</div>
+
+
+#parse("Foot.html")
